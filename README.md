@@ -1,9 +1,7 @@
 Fourier Domain Adaption (FDA)
 -----------------------------
 
-This Python package performs a classic frequency domain adaptation.
-
-For more info, check this paper by Yanchao Yang and Stefano Soatto in CVPR 2020: 
+This Python package implements a classic frequency domain adaptation from this paper by Yanchao Yang and Stefano Soatto in CVPR 2020: 
 
 [**FDA: Fourier Domain Adaptation for Semantic Segmentation**](https://arxiv.org/abs/2004.05498)
 
@@ -15,6 +13,7 @@ Install with pip
 $ python3 -m pip install fda --user
 ```
 
+
 Install from source
 -------------------
 
@@ -22,18 +21,29 @@ Install from source
 $ python3 setup.py install --user
 ```
 
+
 Exemplary code snippet
 ----------------------
 
-```
-TODO
+```python
+import fda
+
+# Read source and target images
+source_im = cv2.imread('source.jpg')
+target_im = cv2.imread('target.jpg')
+
+# Perform domain adaptation
+adapted_im = fda.fda(source,_im, target_im, beta=0.005)
 ```
 
-Run domain adaptation
----------------------
+
+Run domain adaptation on a single image
+---------------------------------------
+
 ```
-$ python3 -m 
+$ python3 -m fda.run --source source.jpg --target target.jpg --output output.jpg --beta 0.005
 ```
+
 
 Some examples of the domain adaptation
 --------------------------------------
@@ -41,6 +51,7 @@ Some examples of the domain adaptation
 | Source      | Target      | Result |
 | ----------- | ----------- | ------ |
 | X           | Y           | Z
+
 
 License
 -------
