@@ -26,7 +26,14 @@ Exemplary code snippet
 ----------------------
 
 ```
-TODO
+import fda
+
+# Read source and target images
+source_im = cv2.imread('source.jpg')
+target_im = cv2.imread('target.jpg')
+
+# Perform domain adaptation
+adapted_im = fda.fda(source,_im, target_im, beta=0.005)
 ```
 
 Run domain adaptation
