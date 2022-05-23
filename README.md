@@ -25,7 +25,7 @@ $ python3 setup.py install --user
 Exemplary code snippet
 ----------------------
 
-```
+```python
 import fda
 
 # Read source and target images
