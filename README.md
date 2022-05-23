@@ -15,12 +15,14 @@ Install with pip
 $ python3 -m pip install fda --user
 ```
 
+
 Install from source
 -------------------
 
 ```
 $ python3 setup.py install --user
 ```
+
 
 Exemplary code snippet
 ----------------------
@@ -36,11 +38,14 @@ target_im = cv2.imread('target.jpg')
 adapted_im = fda.fda(source,_im, target_im, beta=0.005)
 ```
 
-Run domain adaptation
----------------------
+
+Run domain adaptation on a single image
+---------------------------------------
+
 ```
-$ python3 -m 
+$ python3 -m fda.run --source source.jpg --target target.jpg --output output.jpg --beta 0.005
 ```
+
 
 Some examples of the domain adaptation
 --------------------------------------
@@ -48,6 +53,7 @@ Some examples of the domain adaptation
 | Source      | Target      | Result |
 | ----------- | ----------- | ------ |
 | X           | Y           | Z
+
 
 License
 -------
