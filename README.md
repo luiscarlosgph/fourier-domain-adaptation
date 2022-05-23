@@ -35,6 +35,12 @@ Run domain adaptation
 $ python3 -m 
 ```
 
+Some examples of the domain adaptation
+--------------------------------------
+
+| Source      | Target      | Result |
+| ----------- | ----------- | ------ |
+| X           | Y           | Z
 
 License
 -------
@@ -45,6 +51,6 @@ MIT
 Author
 ------
 
-Luis Carlos Garcia Peraza Herrera (luiscarlos.gph@gmail.com), 2022.
+Luis Carlos Garcia Peraza Herrera (luiscarlos.gph@gmail.com), 2020-2022.
 
 
