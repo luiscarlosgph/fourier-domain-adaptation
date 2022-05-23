@@ -1,9 +1,9 @@
 Fourier Domain Adaption (FDA)
 -----------------------------
 
-This Python package implements a classic frequency domain adaptation from this paper by Yanchao Yang and Stefano Soatto in CVPR 2020: 
+This Python package implements a classic frequency domain adaptation, as shown in: 
 
-[**FDA: Fourier Domain Adaptation for Semantic Segmentation**](https://arxiv.org/abs/2004.05498)
+ [**FDA: Fourier Domain Adaptation for Semantic Segmentation, Yanchao Yang and Stefano Soatto, CVPR 2020**](https://arxiv.org/abs/2004.05498)
 
 
 Install with pip
