@@ -119,7 +119,7 @@ def fda(source_im: np.ndarray, target_im: np.ndarray,
     win_w = int(round(beta * cols))
 
     if win_h < 1 or win_w < 1:
-        beta = max(1. / cols, 1. / rows)
+        beta = min(1. / cols, 1. / rows)
         print('[WARN] The window size is to small because either your images '
               + 'are too small or your beta is too low. '
               + 'The beta has been modified to ' + ('%.4f' % beta) + ' so that '
