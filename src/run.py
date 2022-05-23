@@ -8,6 +8,7 @@ import argparse
 import numpy as np
 import cv2 
 import os
+import time
 
 # My imports
 import fda
@@ -29,7 +30,7 @@ def parse_command_line_parameters(parser):
                         help = 'Path to the target image.')
     parser.add_argument('--output', required = True,
                         help = 'Path to the output image.')
-    parser.add_argument('--beta', required = True, default = 0.001, 
+    parser.add_argument('--beta', required = True, default = 1e-2, 
                         type = float,
                         help = 'Factor to regulate the degree of adaptation.')
     
@@ -40,11 +41,11 @@ def parse_command_line_parameters(parser):
 
 
 def validate_cmd_param(args):
-    if os.path.isfile(args.source):
-        raise ValueError('[ERROR] ')
+    if not os.path.isfile(args.source):
+        raise ValueError('[ERROR] The input file ' + args.source + ' does not exist.')
 
-    if os.path.isfile(args.target):
-        raise ValueError('[ERROR] ')
+    if not os.path.isfile(args.target):
+        raise ValueError('[ERROR] The input file ' + args.target + ' does not exist.')
 
  
 def main(): 
@@ -54,8 +55,8 @@ def main():
     validate_cmd_param(args)
     
     # Read images
-    source_im = cv2.imread(args.source)
-    target_im = cv2.imread(args.target)
+    source_im = cv2.imread(args.source, cv2.IMREAD_UNCHANGED)
+    target_im = cv2.imread(args.target, cv2.IMREAD_UNCHANGED)
     
     # Domain adaptation
     tic = time.time()

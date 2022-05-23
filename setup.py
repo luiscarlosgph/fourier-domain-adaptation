@@ -23,7 +23,7 @@ setuptools.setup(name='fda',
     },
     install_requires=[
       'numpy',
-      'cv2',
+      'opencv-python',
     ],
     long_description=long_description,
     long_description_content_type='text/markdown',

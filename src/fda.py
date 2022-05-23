@@ -110,10 +110,22 @@ def fda(source_im: np.ndarray, target_im: np.ndarray,
 
     @returns the source image adapted to the target domain.
     """
+    # Compute stats of the source image
     rows, cols, _ = source_im.shape
-    crow, ccol = rows / 2, cols / 2
+    crow, ccol = rows // 2, cols // 2
+    
+    # Compute the size of the Fourier centre crop
     win_h = int(round(beta * rows)) 
     win_w = int(round(beta * cols))
+
+    if win_h < 1 or win_w < 1:
+        beta = max(1. / cols, 1. / rows)
+        print('[WARN] The window size is to small because either your images '
+              + 'are too small or your beta is too low. '
+              + 'The beta has been modified to ' + ('%.4f' % beta) + ' so that '
+              + 'the window is at least 1x1 pixel.')
+        win_h = int(round(beta * rows)) 
+        win_w = int(round(beta * cols))
 
     # Resize target image to the size of the source image
     target_im = cv2.resize(target_im, (cols, rows))
@@ -125,9 +137,11 @@ def fda(source_im: np.ndarray, target_im: np.ndarray,
         amp_t, phase_t = fft_amp_phase(target_im[:, :, k])
 
         # Perform domain adaptation by transferring the FFT amplitude from target to source
-        amp_s[crow - win_h:crow + win_h, ccol - win_w:ccol + win_w] = amp_t[crow - win_h:crow + win_h, ccol - win_w:ccol + win_w].copy()
-
-        adapted_im[:, :, k] = fourier.ifft_amp_phase(amp_s, phase_s)
+        replacement = amp_t[crow - win_h:crow + win_h, 
+                            ccol - win_w:ccol + win_w].copy()
+        amp_s[crow - win_h:crow + win_h, 
+              ccol - win_w:ccol + win_w] = replacement 
+        adapted_im[:, :, k] = ifft_amp_phase(amp_s, phase_s)
         
     return adapted_im
 
