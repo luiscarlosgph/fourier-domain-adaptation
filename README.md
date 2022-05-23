@@ -50,7 +50,7 @@ Some examples of the domain adaptation
 
 | Source image   | Target domain image   | Result: source image adapted to the target domain   |
 | :------------: | :-------------------: | :-------------------------------------------------: |
-| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source1.jpg?raw=true" width=200> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target1.jpg?raw=true" width=200>           | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1.jpg?raw=true" width=200>
+| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source1.jpg?raw=true" width=320> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target1.jpg?raw=true" width=320>           | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1.jpg?raw=true" width=320>
 
 License
 -------
