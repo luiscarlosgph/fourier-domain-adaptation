@@ -22,6 +22,19 @@ Install from source
 $ python3 setup.py install --user
 ```
 
+Exemplary code snippet
+----------------------
+
+```
+TODO
+```
+
+Run domain adaptation
+---------------------
+```
+$ python3 -m 
+```
+
 
 License
 -------
