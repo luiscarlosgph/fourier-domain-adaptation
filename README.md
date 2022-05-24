@@ -59,8 +59,8 @@ Some examples of the domain adaptation
     </thead>
     <tbody>
         <tr>
-            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source1.jpg?raw=true" width=640></td>
-            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target1.jpg?raw=true" width=640></td>
+            <td rowspan=3><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source1.jpg?raw=true" width=640></td>
+            <td rowspan=3><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target1.jpg?raw=true" width=640></td>
             <td>0.001</td>
             <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1_0.001.jpg?raw=true" width=640></td>
         </tr>
@@ -69,8 +69,12 @@ Some examples of the domain adaptation
             <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1_0.01.jpg?raw=true" width=640></td>
         </tr>
         <tr>
-            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source2.jpg?raw=true" width=640></td>
-            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target2.jpg?raw=true" width=640></td>
+            <td>0.1</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1_0.1.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td rowspan=3><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source2.jpg?raw=true" width=640></td>
+            <td rowspan=3><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target2.jpg?raw=true" width=640></td>
             <td>0.001</td>
             <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output2_0.001.jpg?raw=true" width=640></td>
         </tr>
@@ -79,14 +83,22 @@ Some examples of the domain adaptation
             <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output2_0.01.jpg?raw=true" width=640></td>
         </tr>
         <tr>
-            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source3.jpg?raw=true" width=640></td>
-            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target3.jpg?raw=true" width=640></td>
+            <td>0.1</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output2_0.1.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td rowspan=3><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source3.jpg?raw=true" width=640></td>
+            <td rowspan=3><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target3.jpg?raw=true" width=640></td>
             <td>0.001</td>
             <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output3_0.001.jpg?raw=true" width=640></td>
         </tr>
         <tr>
             <td>0.01</td>
             <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output3_0.01.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td>0.1</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output3_0.1.jpg?raw=true" width=640></td>
         </tr>
     </tbody>
 </table>
