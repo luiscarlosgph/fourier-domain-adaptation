@@ -57,7 +57,7 @@ Some examples of the domain adaptation
 License
 -------
 
-MIT
+This repository is shared under an [MIT](https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/LICENSE) license.
 
 
 Author
