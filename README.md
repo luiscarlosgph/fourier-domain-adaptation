@@ -103,6 +103,13 @@ Some examples of the domain adaptation
     </tbody>
 </table>
 
+
+Run unit tests
+--------------
+```
+$ python3 tests/test_fourier.py
+```
+
 License
 -------
 

@@ -14,7 +14,8 @@ def fft_amp_phase(im: np.ndarray):
     @brief    Retrieve magnitude and phase images using the Discrete Fourier 
               Transform from a BGR image.
 
-    @param[in]  im  OpenCV BGR image (H, W) in the [0, 255] range (np.uint8).
+    @param[in]  im  OpenCV single-channel image (H, W) in the [0, 255] 
+                    range (np.uint8).
 
     @returns the Fourier amplitude and phase images (amplitude, phase).
              As would be expected, size of the magnitude and phase images 
