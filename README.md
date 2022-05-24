@@ -48,14 +48,48 @@ $ python3 -m fda.run --source source.jpg --target target.jpg --output output.jpg
 Some examples of the domain adaptation
 --------------------------------------
 
-| Source image   | Target domain image   | Beta                                         | Output |
-| :------------: | :-------------------: | :-------------------------------------------------: | :--: |
-| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source1.jpg?raw=true" width=640> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target1.jpg?raw=true" width=640>           | 0.001 | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1_0.001.jpg?raw=true" width=640>
-| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source1.jpg?raw=true" width=640> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target1.jpg?raw=true" width=640>           | 0.01 | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1_0.01.jpg?raw=true" width=640>
-| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source2.jpg?raw=true" width=640> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target2.jpg?raw=true" width=640>           | 0.001 | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output2_0.001.jpg?raw=true" width=640>
-| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source2.jpg?raw=true" width=640> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target2.jpg?raw=true" width=640>           | 0.01 | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output2_0.01.jpg?raw=true" width=640>
-| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source3.jpg?raw=true" width=640> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target3.jpg?raw=true" width=640>           | 0.001 | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output3_0.001.jpg?raw=true" width=640>
-| <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source3.jpg?raw=true" width=640> | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target3.jpg?raw=true" width=640>           | 0.01 | <img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output3_0.01.jpg?raw=true" width=640>
+<table>
+    <thead>
+        <tr>
+            <th>Source image</th>
+            <th>Target domain image</th>
+            <th>Beta</th>
+            <th>Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source1.jpg?raw=true" width=640></td>
+            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target1.jpg?raw=true" width=640></td>
+            <td>0.001</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1_0.001.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td>0.01</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output1_0.01.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source2.jpg?raw=true" width=640></td>
+            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target2.jpg?raw=true" width=640></td>
+            <td>0.001</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output2_0.001.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td>0.01</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output2_0.01.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/source3.jpg?raw=true" width=640></td>
+            <td rowspan=2><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/target3.jpg?raw=true" width=640></td>
+            <td>0.001</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output3_0.001.jpg?raw=true" width=640></td>
+        </tr>
+        <tr>
+            <td>0.01</td>
+            <td><img src="https://github.com/luiscarlosgph/fourier-domain-adaptation/blob/main/images/output3_0.01.jpg?raw=true" width=640></td>
+        </tr>
+    </tbody>
+</table>
 
 License
 -------
