@@ -73,7 +73,7 @@ def ifft_amp_phase(amp: np.ndarray, phase: np.ndarray):
     im = np.abs(im[:, :, 0] + 1j * im[:, :, 1])
 
     # Min-max normalisation to put back the image in range [0.0, 1.0]
-    im = (im - np.min(im)) / (np.max(im) - np.min(im))
+    #im = (im - np.min(im)) / (np.max(im) - np.min(im))
 
     # Convert image to unsigned int in range [0, 255] as OpenCV expects
     im = np.round(im * 255.).astype(np.uint8)
