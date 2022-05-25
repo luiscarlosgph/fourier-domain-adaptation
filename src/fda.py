@@ -25,7 +25,7 @@ def fft_amp_phase(im: np.ndarray):
         raise ValueError('[ERROR] fft_amp_phase() expects a np.ndarray of '
                          'type np.uint8.')
 
-    # FFT
+    # DFT
     dft = cv2.dft(im.astype(np.float64) / 255., flags = cv2.DFT_COMPLEX_OUTPUT)
 
     # Join the two channels (real and imag) into a single number, 
@@ -65,10 +65,10 @@ def ifft_amp_phase(amp: np.ndarray, phase: np.ndarray):
     # Put back the DC component in the (0, 0) coordinate
     dft = np.fft.ifftshift(dft_shift)
 
-    # Separate complex number into two channels, as OpenCV iFFT expects
+    # Separate complex number into two channels, as OpenCV iDFT expects
     dft = np.array([dft.real, dft.imag]).transpose(1, 2, 0)
 
-    # Inverse FFT
+    # Inverse DFT
     im = cv2.idft(dft, flags=cv2.DFT_SCALE)
     im = np.abs(im[:, :, 0] + 1j * im[:, :, 1])
 
@@ -133,11 +133,12 @@ def fda(source_im: np.ndarray, target_im: np.ndarray,
 
     adapted_im = np.empty_like(source_im)
     for k in range(3):
-        # FFT
+        # DFT
         amp_s, phase_s = fft_amp_phase(source_im[:, :, k])
         amp_t, phase_t = fft_amp_phase(target_im[:, :, k])
 
-        # Perform domain adaptation by transferring the FFT amplitude from target to source
+        # Perform domain adaptation by transferring the DFT amplitude from 
+        # target to source
         replacement = amp_t[crow - win_h:crow + win_h, 
                             ccol - win_w:ccol + win_w].copy()
         amp_s[crow - win_h:crow + win_h, 
