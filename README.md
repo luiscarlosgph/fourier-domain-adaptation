@@ -119,6 +119,6 @@ This repository is shared under an [MIT](https://github.com/luiscarlosgph/fourie
 Author
 ------
 
-Luis Carlos Garcia Peraza Herrera (luiscarlos.gph@gmail.com), 2020-2022.
+Luis Carlos Garcia Peraza Herrera (luiscarlos.gph@gmail.com), 2020-2023.
 
 
